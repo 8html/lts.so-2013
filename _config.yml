@@ -1,0 +1,30 @@
+title: 雷特斯官网
+
+url: http://www.lts.so
+
+keywords: "雷特斯"
+
+description: "佛山市顺德区雷特斯装饰材料有限公司是一家专业生产销售铝质天花、室内外铝幕墙板、异型天花、天花配件等工程装饰配套材料的企业。"
+
+permalink: /:categories/:title.html
+
+relative_permalinks: false
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - .
+    - _assets/js
+    - _assets/css
+  cache: true
+  cache_assets: true
+  gzip: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+
+prodimgs: http://www.lts.so/images/products

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --------- LAYOUT --------- */
+
+#container_12{
+	position:fixed;
+	width:100%;
+	}
+
+#bg, #menu, #logo, #animation, #breadcrumbs, #breadcrumbs_2, #breadcrumbs_3, #breadcrumbs_4, #breadcrumbs_5, #quote, fieldset {
+    display:none;
+	}
+#print{
+	display:block;
+	}
+	
+#content, #content-wide, #content-small, #content-short{
+	height:auto;
+	width:100%;
+	margin:0;
+	float:none;
+	}
+ul{
+	list-style:circle;
+	}
+#projects_list li ul{
+	display:block;
+	top:10px;
+	}
+#projects_list li ul a{
+	height:auto;
+	padding-top:0;
+	}
+
