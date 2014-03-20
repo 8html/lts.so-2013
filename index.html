@@ -1,6 +1,6 @@
 ---
 layout: default
-full_title: ；雷特斯官网
+full_title: 雷特斯官网
 ---
   <div class="flash">
     <div id="confirm"></div>
@@ -51,9 +51,9 @@ full_title: ；雷特斯官网
         <div class="bt">
           <p><span class="fl">公司新闻<br>News</span></p>
         </div>
-        <div class="xinwen1">{dede:arclist typeid="3" orderby="hot" row="12"}
-          <div class="xwbar"><a href="[field:arcurl/]" title="[field:title/] "><div class="fl" style="padding-left:10px">[field:title/]</div><div class="fr" style="padding-right:10px">[field:pubdate function="MyDate('Y-m-d',@me)"/]</div><div class="c"></div></a></div>
-          {/dede:arclist}
+        <div class="xinwen1">{% for post in site.categories["news"] limit:12 %}
+          <div class="xwbar"><a href="{ site.www.lpts.so }}{{ post.url }}" title="{{ post.title }}"><div class="fl" style="padding-left:10px">{{ post.title }}</div><div class="fr" style="padding-right:10px">{{ post.date | date:"%Y年%m月%d日" }}</div><div class="c"></div></a></div>
+          {% endfor %}
         </div>
       </div>
       <div class="lx fl">
@@ -71,7 +71,7 @@ full_title: ；雷特斯官网
     <div class="right_gj fr">
       <div class="bt"><p><span class="fl">产品中心<br>Products</span><a href="http://www.lts.so/products/">MORE</a></p></div>
       <div class="pro_index">
-        <ul>{dede:arclist typeid="2" orderby="hot" row="9"}<li><a href="[field:arcurl/]"><img src="[field:litpic/]" style="width:180px;height:180px;"><p>[field:title/]</p></a></li>
+        <ul>{% for post in site.categories["news"] limit:9 %}<li><a href="[field:arcurl/]"><img src="[field:litpic/]" style="width:180px;height:180px;"><p>[field:title/]</p></a></li>
           {/dede:arclist}
         </ul>
       </div>
