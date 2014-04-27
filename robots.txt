@@ -1,6 +1,8 @@
 User-agent: *
-Disallow: /assets/
-Disallow: /images/
-Disallow: /favicon.ico
+Disallow: /image-news/
+Disallow: /image-pro/
+Disallow: /image-case/
+Disallow: /logreport/
+Disallow: /templets/
 
-Sitemap: http://www.lts.so/Sitemap.xml
+
