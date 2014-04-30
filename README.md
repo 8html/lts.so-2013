@@ -29,17 +29,10 @@ lts.so-2013
 下载及生成网站
 -----
 
-1. 下载网站源码: ``git clone git://github.com/zackwong/lts.so-2013.git``
-
-2. 进入源码根目录: ``cd lts.so-2013``
-
-3. 生成网站: ``rake build``
+下载网站源码后直接使用: ``git clone git://github.com/zackwong/lts.so-2013.git``
 
 
-备注
------
+开发者
+---------
 
-1. Install Ruby 2.0.
-2. Install bundler: ``gem install bundler``
-3. Install necessary gems: ``bundle``
-
+* Zack Wong &lt;zack@gdky.net&gt;
