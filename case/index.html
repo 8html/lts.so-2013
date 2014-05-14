@@ -9,11 +9,13 @@
 <title>工程案例-雷特斯</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
+<link href="/templets/default/style/slide.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="/templets/default/style/style.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="/templets/default/style/prettyphoto.css" rel="stylesheet" media="screen" type="text/css" />
 <script src="/templets/default/style/jquery.js" type="text/javascript"></script><!--QQ需要-->
 <script src="/templets/default/style/scroll.js" type="text/javascript"></script>
 <script src="/templets/default/style/prettyphoto.js"></script>
+<script src="/templets/default/style/jquery.sliderkit.1.9.2.pack.js"></script>
 <script src="/templets/default/style/pageload.js" type="text/javascript"></script>
 </head>
 
@@ -29,10 +31,10 @@
 			<li><a href="/about/">公司简介<br><span>About</span></a></li>
 			<li>
 				<div id="menu">
-					<ul id="navvv" class="navvv">	
+					<ul id="navvv" class="navvv">
 						<li><a href="/products/">产品中心<br><span>Products</span></a>
 						<ul>
-                            <li><a href="/products/fangban.html">方板系列</a></li>								
+                            <li><a href="/products/fangban.html">方板系列</a></li>
                             <li><a href="/products/diejiban.html">跌级板系列</a></li>
                             <li><a href="/products/tiaokou.html">条扣系列</a></li>
                             <li><a href="/products/geshan.html">格栅系列</a></li>
@@ -54,7 +56,7 @@
 			<li><a href="/jobs/">人才招聘<br><span>Jobs</span></a></li>
 			<li>
 				<div id="menu">
-					<ul id="navvv" class="navvv">	
+					<ul id="navvv" class="navvv">
 						<li><a href="/contact/">联系我们<br><span>Contact Us</span></a>
 							<ul><li class="abccc">欢迎加盟合作</li></ul>
 						</li>
@@ -126,16 +128,37 @@ window.onload=menuFix;
 </div>
 			<div class="about fr">
 				<div class="nei_bt">
-					<img src="/templets/default/images/gcal.jpg" style="margin-top: 5px;" class="fl"> 
+					<img src="/templets/default/images/gcal.jpg" style="margin-top: 5px;" class="fl">
 					<p class="fr">
-						<a href="/">雷特斯</a>  >> <a href="">工程案例</a>					
+						<a href="/">雷特斯</a>  >> <a href="">工程案例</a>
 					</p>
 				</div>
 <div class="bd" style="padding: 18px 20px;width: 725px;overflow-x:hidden">
 					<div>
 						<div class="bigtitle">工程案例</div>
-<div style="text-align: center;">
-	<img alt="" src="/image-case/case.jpg" style="width: 300px; height: 300px;" /></div>
+
+<div class="sliderkit photoslider-mini">
+  <div class="sliderkit-panels">
+    <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Previous"><span>Previous</span></a></div>
+    <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Next"><span>Next</span></a></div>
+    <div class="sliderkit-panel">
+      <a href="#"><img src="/image-case/case.jpg" width="500" height="335"></a>
+    </div>
+    <div class="sliderkit-panel">
+      <a href="#"><img src="/image-case/case01.jpg" width="500" height="335"></a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	$(".photoslider-mini").sliderkit({
+		auto:false,
+		autospeed:3000,
+		panelbtnshover:true,
+		circular:true,
+		fastchange:false,
+		panelfx:"sliding",
+	});
+</script>
 
 						<div id="showcase_con">
 							<div class="sc_p simply-scroll-back-fast"><a href="javascript:;" class="sc_prev">上一个</a></div>
@@ -214,7 +237,7 @@ $(function(){
 <div class="zxkf">
 	<div class="zxkfbtn"></div>
 	<div class="zxkfpanel">
-		<div class="zxkfpanel_h"></div> 
+		<div class="zxkfpanel_h"></div>
 		<div class="zxkfpanel_c">
 			<div class="zxkfpanel_c_1">
 				客户咨询时间<br />8:00-18:00
@@ -249,4 +272,3 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </body>
 
 </html>
-	
